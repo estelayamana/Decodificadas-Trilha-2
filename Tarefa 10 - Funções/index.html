@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Curso JavaScript Progressivo</title>
+   Primeira nota <input id="nota1" type="number"> <br />
+   Segunda nota <input id="nota2" type="number"> <br />
+   Terceira nota <input id="nota3" type="number"> <br />
+   Quarta nota <input id="nota4" type="number"> <br />
+   Quinta nota <input id="nota5" type="number"> <br />
+   <button onclick="media()">Calcular Média</button>
+
+   <script type="text/javascript">
+
+    function media(){
+     var nota1 = parseFloat(document.getElementById("nota1").value);
+     var nota2 = parseFloat(document.getElementById("nota2").value);
+     var nota3 = parseFloat(document.getElementById("nota2").value);
+     var nota4 = parseFloat(document.getElementById("nota2").value);
+     var nota5 = parseFloat(document.getElementById("nota2").value);
+
+     var media = (nota1 + nota2 + nota3 + nota4 + nota5)/5 ;
+
+     if(media >= 7)
+      if(media==10)
+       alert("Uau! Aprovado");
+        else
+       alert("Parabêns, aprovado! Média "+media);
+     else
+      alert("Reprovado!")
+
+    }
+ </script>
+
+ </head>
+</html>
