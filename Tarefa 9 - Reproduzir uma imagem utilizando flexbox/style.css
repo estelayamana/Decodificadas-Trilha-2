@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer, main, aside {
+  background-color: green;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+header, footer {
+  background-color: blue;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  width: calc(25% - 10px);
+  height: 100px;
+  background-color: yellowgreen;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box:last-child {
+  width: calc(33.33% - 10px);
+}
+
+.box:nth-child(n+9) {
+  width: calc(25% - 10px); /* Adjust width for third row boxes */
+  margin-right: 20px; /* Add margin-right to space out the boxes */
+}
+
+aside {
+  width: 200px;
+  background-color: red;
+  color: white; /* Set text color to white */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  margin-top: auto;
+  background-color: blue;
+  color: #fff;
+}
