@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  margin: 20px auto;
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  /* Responsividade - Exemplo para telas menores */
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px; /* Aumentar o padding horizontal */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Acessibilidade - Foco no botão */
+button:focus {
+  outline: 2px solid #005cbf; /* Exemplo de outline para foco */
+}
+
+.resultado {
+  margin-top: 20px;
+  font-weight: bold;
+}

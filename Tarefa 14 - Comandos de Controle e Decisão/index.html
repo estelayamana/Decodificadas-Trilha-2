@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluções em JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Soluções em JavaScript</h1>
 
+  <section class="exercicio" id="exercicio1">
+    <h2>Exercício 1: Média de 3 Números</h2>
+    <label for="num1">1º Número:</label>
+    <input type="number" id="num1" placeholder="1º Número">
+    <label for="num2">2º Número:</label>
+    <input type="number" id="num2" placeholder="2º Número">
+    <label for="num3">3º Número:</label>
+    <input type="number" id="num3" placeholder="3º Número">
+    <button onclick="calcularMedia()">Calcular Média</button>
+    <div class="resultado" id="media"></div>
+  </section>
+
+  <section class="exercicio" id="exercicio2">
+    <h2>Exercício 2: Maioridade</h2>
+    <label for="idade">Informe sua idade:</label>
+    <input type="number" id="idade" placeholder="Informe sua idade">
+    <button onclick="verificarMaioridade()">Verificar Maioridade</button>
+    <div class="resultado" id="maioridade"></div>
+  </section>
+
+  <section class="exercicio" id="exercicio3">
+    <h2>Exercício 3: Mês Correspondente</h2>
+    <label for="mes">Informe o número do mês (1 a 12):</label>
+    <input type="number" id="mes" placeholder="Informe o número do mês">
+    <button onclick="mostrarMes()">Mostrar Mês</button>
+    <div class="resultado" id="mesTexto"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
