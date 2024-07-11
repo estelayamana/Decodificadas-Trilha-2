@@ -40,10 +40,40 @@ nav li {
 nav a {
   text-decoration: none;
   color: #333;
+  transition: color 0.3s ease; /* Animação de mudança de cor */
 }
 
 nav a:hover {
-color: #000; /* Cor ao passar o mouse */
+  color: #000; /* Cor ao passar o mouse */
+}
+
+/* Menu Dropdown (Opcional) */
+
+nav.menu-principal {
+  position: relative; /* Posicionamento relativo para submenu */
+}
+
+nav.menu-principal li {
+  position: relative; /* Posicionamento relativo para submenu */
+}
+
+nav.menu-principal ul {
+  display: none; /* Esconde submenus por padrão */
+  position: absolute; /* Posicionamento absoluto */
+  top: 100%; /* Posiciona o submenu abaixo do item principal */
+  left: 0; /* Alinha à esquerda do item principal */
+  background-color: #f9f9f9; /* Cor de fundo */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+  width: 150px; /* Largura do submenu */
+  z-index: 1; /* Posiciona o submenu acima do conteúdo */
+}
+
+nav.menu-principal li:hover ul {
+  display: block; /* Exibe o submenu ao passar o mouse sobre o item principal */
+}
+
+nav.menu-principal li ul li {
+  padding: 10px; /* Padding para itens do submenu */
 }
 
 /* Corpo */
@@ -67,11 +97,17 @@ color: #000; /* Cor ao passar o mouse */
 #corpo li {
   display: inline-block;
   margin-right: 20px;
+  transition: transform 0.3s ease; /* Animação de hover */
 }
 
 #corpo img {
   width: 50px;
   height: 50px;
+  border-radius: 50%; /* Borda arredondada para ícones */
+}
+
+#corpo li:hover img {
+  transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
 }
 
 /* Mapa */
@@ -138,7 +174,7 @@ button[type="submit"]:hover {
   background-color: #45a049; /* Verde mais escuro */
 }
 
-/* Layout responsivo  */
+/* Layout responsivo */
 @media screen and (max-width: 600px) {
   #formulario-cadastro {
     width: 95%;
