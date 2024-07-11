@@ -138,7 +138,7 @@ button[type="submit"]:hover {
   background-color: #45a049; /* Verde mais escuro */
 }
 
-/* Layout responsivo (opcional) */
+/* Layout responsivo  */
 @media screen and (max-width: 600px) {
   #formulario-cadastro {
     width: 95%;
